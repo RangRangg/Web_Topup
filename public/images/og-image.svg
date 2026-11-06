@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+    <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#070b14" />
+            <stop offset="50%" stop-color="#0f172a" />
+            <stop offset="100%" stop-color="#050811" />
+        </linearGradient>
+        <linearGradient id="text-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#22d3ee" />
+            <stop offset="50%" stop-color="#818cf8" />
+            <stop offset="100%" stop-color="#c084fc" />
+        </linearGradient>
+        <radialGradient id="glow-cyan" cx="20%" cy="30%" r="40%">
+            <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient id="glow-purple" cx="80%" cy="70%" r="45%">
+            <stop offset="0%" stop-color="#9333ea" stop-opacity="0.25" />
+            <stop offset="100%" stop-color="#9333ea" stop-opacity="0" />
+        </radialGradient>
+    </defs>
+    <!-- Background -->
+    <rect width="1200" height="630" fill="url(#bg)" />
+    <circle cx="250" cy="200" r="350" fill="url(#glow-cyan)" />
+    <circle cx="950" cy="450" r="400" fill="url(#glow-purple)" />
+    
+    <!-- Cyber Grid Line Pattern -->
+    <g stroke="#1e293b" stroke-width="1" stroke-opacity="0.4">
+        <line x1="0" y1="105" x2="1200" y2="105" />
+        <line x1="0" y1="210" x2="1200" y2="210" />
+        <line x1="0" y1="315" x2="1200" y2="315" />
+        <line x1="0" y1="420" x2="1200" y2="420" />
+        <line x1="0" y1="525" x2="1200" y2="525" />
+        <line x1="200" y1="0" x2="200" y2="630" />
+        <line x1="400" y1="0" x2="400" y2="630" />
+        <line x1="600" y1="0" x2="600" y2="630" />
+        <line x1="800" y1="0" x2="800" y2="630" />
+        <line x1="1000" y1="0" x2="1000" y2="630" />
+    </g>
+
+    <!-- Logo & Icon -->
+    <g transform="translate(140, 160)">
+        <!-- Emblem -->
+        <rect width="100" height="100" rx="24" fill="#0f172a" stroke="#22d3ee" stroke-width="2.5" />
+        <path d="M50 20L72 70H60L55 58H45L40 70H28L50 20ZM50 36L47 48H53L50 36Z" fill="url(#text-accent)" />
+        <circle cx="50" cy="78" r="4" fill="#22d3ee" />
+    </g>
+
+    <!-- Main Typography -->
+    <text x="270" y="210" font-family="'Instrument Sans', system-ui, sans-serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="-1">
+        AETHEREAL <tspan fill="url(#text-accent)">JOKI</tspan>
+    </text>
+    <text x="272" y="250" font-family="'Instrument Sans', system-ui, sans-serif" font-size="20" font-weight="700" fill="#06b6d4" letter-spacing="4">
+        NEXT-GEN GAMING ECOSYSTEM &amp; AI ASSISTANT
+    </text>
+
+    <!-- Subtitle / Value Proposition -->
+    <text x="140" y="360" font-family="'Instrument Sans', system-ui, sans-serif" font-size="28" font-weight="500" fill="#cbd5e1">
+        Platform Top Up Instan &amp; Jasa Joki Pro Bergaransi #1 di Indonesia.
+    </text>
+    <text x="140" y="405" font-family="'Instrument Sans', system-ui, sans-serif" font-size="22" font-weight="400" fill="#94a3b8">
+        Pro Booster Terverifikasi • 100% Anti Banned • Konsultasi Cerdas Aethereal AI • Instan 24/7
+    </text>
+
+    <!-- Trust Badges -->
+    <g transform="translate(140, 475)">
+        <!-- Badge 1 -->
+        <rect width="260" height="52" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="20" y="32" font-family="'Instrument Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="#38bdf8">⚡ 15.000+ ORDER SELESAI</text>
+
+        <!-- Badge 2 -->
+        <rect x="280" width="260" height="52" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="300" y="32" font-family="'Instrument Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="#a855f7">🛡️ 100% GARANSI AMAN</text>
+
+        <!-- Badge 3 -->
+        <rect x="560" width="260" height="52" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="580" y="32" font-family="'Instrument Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="#10b981">🤖 AETHEREAL AI POWERED</text>
+    </g>
+
+    <!-- Web URL -->
+    <text x="1060" y="585" text-anchor="end" font-family="'Instrument Sans', system-ui, sans-serif" font-size="18" font-weight="600" fill="#64748b">
+        http://rpl.test
+    </text>
+</svg>

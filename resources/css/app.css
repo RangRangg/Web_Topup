@@ -1,0 +1,124 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-primary: #facc15;
+    --color-primary-hover: #eab308;
+    --color-accent: #facc15;
+}
+
+/* Root Semantic Theme Variables for Light & Dark Modes */
+:root {
+    --bg-void: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f5f9;
+    --color-border: #e2e8f0;
+    --color-border-light: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    color-scheme: light;
+}
+
+html.dark,
+.dark {
+    --bg-void: #14131a;
+    --bg-surface: #1b1a23;
+    --bg-card: #23222d;
+    --bg-card-hover: #2c2b3a;
+    --color-border: #343343;
+    --color-border-light: #444357;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    color-scheme: dark;
+}
+
+/* Base Body Styling */
+body {
+    background-color: var(--bg-void);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Halftone gaming banner dot pattern */
+.bg-gaming-dots {
+    background-image: radial-gradient(rgba(202, 138, 4, 0.12) 1px, transparent 1px);
+    background-size: 16px 16px;
+}
+.dark .bg-gaming-dots {
+    background-image: radial-gradient(rgba(250, 204, 21, 0.12) 1px, transparent 1px);
+}
+
+/* Clean Surface Panels */
+.panel {
+    background-color: var(--bg-card);
+    border: 1px solid var(--color-border);
+}
+
+.panel-hover {
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.panel-hover:hover {
+    border-color: #facc15;
+    background-color: var(--bg-card-hover);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+.dark ::-webkit-scrollbar-track {
+    background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
+
+/* Admin Horizontal Tab Navigation Smooth Scroll */
+.admin-nav-scroll {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.admin-nav-scroll::-webkit-scrollbar {
+    height: 4px;
+}
+
+.admin-nav-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.admin-nav-scroll::-webkit-scrollbar-thumb {
+    background: rgba(56, 189, 248, 0.2);
+    border-radius: 9999px;
+    transition: background 0.2s ease;
+}
+
+.admin-nav-scroll:hover::-webkit-scrollbar-thumb {
+    background: rgba(56, 189, 248, 0.45);
+}
