@@ -9,6 +9,7 @@
 ![Alpine.js](https://img.shields.io/badge/Alpine.js-3.x-8BC0D0?style=for-the-badge&logo=alpinedotjs&logoColor=white)
 ![CI/CD Pipeline](https://img.shields.io/badge/CI%2FCD_Pipeline-Passing_100%25-brightgreen?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Tests](https://img.shields.io/badge/PHPUnit_Tests-117_Passing-success?style=for-the-badge&logo=php)
+[![Download Windows App](https://img.shields.io/badge/Desktop_App-Download_.exe-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/RangRangg/Web_Topup/releases)
 
 ---
 
@@ -29,11 +30,12 @@
 
 ## 📺 Tautan Video Presentasi & Live Demo (Wajib Dicantumkan di README.md)
 
-| Tahapan Video | Bobot Penilaian | Durasi Target | Tautan Video Presentasi |
+| Tahapan Video & Software | Bobot / Jenis | Durasi / Format | Tautan Langsung |
 | :--- | :---: | :---: | :--- |
 | **Video Progres 1: PRD & Konsep Aplikasi** | 20% | 3 – 5 Menit | 🔗 **[Tonton Video Progres 1 (YouTube / Drive)](https://youtu.be/progres1-aethereal-joki)** |
 | **Video Progres 2: Pemodelan UML & UI/UX** | 30% | 5 – 7 Menit | 🔗 **[Tonton Video Progres 2 (YouTube / Drive)](https://youtu.be/progres2-aethereal-joki)** |
 | **Video Final: Live Demo Web & Sistem Utuh**| 50% | 8 – 12 Menit| 🔗 **[Tonton Video Final Live Demo (YouTube / Drive)](https://youtu.be/final-demo-aethereal-joki)** |
+| **Installer Desktop Windows (.exe)** | Standalone App | Setup Installer | 🚀 **[Download Aethereal-Joki-Installer.exe](https://github.com/RangRangg/Web_Topup/releases/latest/download/Aethereal-Joki-Installer.exe)** |
 
 > *(Catatan: Ganti tautan di atas dengan link video YouTube Unlisted / Google Drive rekaman Anda yang memenuhi syarat webcam aktif).*
 
@@ -287,9 +289,26 @@ Semua akun demo development memiliki password default: **`password`**
 
 ---
 
-## 💻 Panduan Menjalankan & Membangun Aplikasi Desktop (.exe Installer)
+## 💻 Panduan & Link Download Aplikasi Desktop (.exe Installer)
 
 Aplikasi **Aethereal Joki** telah terintegrasi dengan **NativePHP (Electron)**, memungkinkan aplikasi Laravel ini dikemas menjadi software desktop mandiri untuk Windows tanpa memerlukan instalasi manual web server di komputer pengguna.
+
+### 📥 Unduh Installer Desktop Siap Pakai (.exe)
+
+Bagi penguji atau pengguna yang ingin langsung mencoba aplikasi tanpa perlu menginstall Laragon, PHP, Node.js, atau konfigurasi database lokal, installer mandiri Windows telah disediakan:
+
+| Berkas Installer | Target Sistem Operasi | Format | Tautan Unduhan Langsung |
+| :--- | :--- | :---: | :--- |
+| **Aethereal-Joki-Installer.exe** | Windows 10 / 11 (64-bit) | Setup `.exe` | 🚀 **[Download Aethereal-Joki-Installer.exe (GitHub Releases)](https://github.com/RangRangg/Web_Topup/releases/latest/download/Aethereal-Joki-Installer.exe)** |
+| **Katalog Rilis Resmi** | Windows x64 | Arsip & Release Notes | 📦 **[Halaman Rilis GitHub (Releases)](https://github.com/RangRangg/Web_Topup/releases)** |
+
+> [!TIP]
+> **Petunjuk Pemasangan Desktop:**
+> 1. Unduh berkas **`Aethereal-Joki-Installer.exe`** melalui tautan di atas.
+> 2. Klik dua kali berkas installer dan ikuti wizard instalasi Windows.
+> 3. Shortcut **Aethereal Joki** akan otomatis dibuat di Desktop & Start Menu, siap langsung digunakan.
+
+---
 
 ### 1. Menjalankan Mode Desktop Development
 Untuk mencoba aplikasi berjalan di dalam jendela native desktop saat masa pengembangan:
