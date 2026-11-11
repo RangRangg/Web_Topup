@@ -17,7 +17,7 @@
 | Informasi Akademik | Detail Mahasiswa & Mata Kuliah |
 | :--- | :--- |
 | **Nama Lengkap** | **Farrel Surya Pratama** |
-| **NIM** | **41230001** *(atau sesuaikan dengan NIM resmi Anda)* |
+| **NIM** | **41257105** |
 | **Kelompok** | **Kelompok 03 (Mandiri / Individual Full-App Build)** |
 | **Tema Topik Kelompok** | **Sistem Informasi Berbasis Web untuk Pemberdayaan UMKM Kreatif Digital & Ekosistem Gaming Cerdas Berbasis AI** |
 | **Mata Kuliah / Kode** | **Rekayasa Perangkat Lunak (TIKB2503021) / 4 SKS (2 Teori + 2 Praktik)** |
@@ -46,7 +46,7 @@ Seluruh dokumen rekayasa perangkat lunak standar industri telah disusun secara l
 2. 📐 **[Dokumen SDD & Perancangan UML SOLID (PDF & Markdown)](docs/02_SDD_UML_Architecture.md)** — 4 Diagram UML Utama (Use Case, Activity, Class SOLID, Sequence), ERD 14 Tabel & Desain UI/UX Figma.
 3. 🧪 **[Dokumen Laporan Pengujian Otomatis & DevOps CI/CD (PDF & Markdown)](docs/03_Test_Report_and_DevOps_CICD.md)** — Laporan 117 Unit/Feature Tests passing 100% dan verifikasi GitHub Actions.
 4. 🎙️ **[Naskah Panduan Video Presentasi Progres 1, 2, & Final (Markdown)](docs/04_Naskah_Video_Presentasi_1_2_Final.md)** — Naskah kata demi kata, cue card, panduan webcam, elevator pitch, dan alur demo live menit-ke-menit.
-5. 📕 **[Berkas Dokumen Lengkap Resmi PDF Tunggal](docs/LAPORAN_LENGKAP_PROYEK_AKHIR_RPL.pdf)** — Jilid dokumen resmi siap diunggah ke portal LMS perkuliahan.
+5. 📕 **[Berkas Dokumen Lengkap Resmi PDF Tunggal](docs/LAPORAN_LENGKAP_PROYEK_AKHIR_Aether.pdf)** — Jilid dokumen resmi siap diunggah ke portal LMS perkuliahan.
 
 ---
 
@@ -64,10 +64,10 @@ Seluruh dokumen rekayasa perangkat lunak standar industri telah disusun secara l
 
 ## 🎯 Target Konfigurasi Final
 
-- **Folder Path:** `C:\laragon\www\rpl` (atau `D:\laragon\www\rpl` / `D:\laragon\www\aether`)
-- **Document Root Apache:** `C:\laragon\www\rpl\public` (atau `D:\laragon\www\aether\public`)
-- **Local Domain:** [http://rpl.test](http://rpl.test)
-- **Database Engine:** MySQL / MariaDB (Database: `rpl`)
+- **Folder Path:** `C:\laragon\www\Aether` (atau `D:\laragon\www\Aether` / `D:\laragon\www\aether`)
+- **Document Root Apache:** `C:\laragon\www\Aether\public` (atau `D:\laragon\www\aether\public`)
+- **Local Domain:** [http://aether.test](http://aether.test)
+- **Database Engine:** MySQL / MariaDB (Database: `aether`)
 - **Nama Brand:** Aethereal Joki
 
 > [!IMPORTANT]
@@ -89,26 +89,26 @@ Buka aplikasi Laragon, klik tombol **Start All**. Pastikan service **Apache** te
 ### 3. Pastikan MySQL Aktif
 Pastikan service **MySQL** telah aktif (default port `3306`).
 
-### 4. Buat Database Bernama "rpl"
-Buat database MySQL baru dengan nama `rpl`:
+### 4. Buat Database Bernama "Aether"
+Buat database MySQL baru dengan nama `Aether`:
 - **Cara GUI (HeidiSQL / phpMyAdmin):**
   1. Klik tombol **Database** di Laragon untuk membuka HeidiSQL, atau akses phpMyAdmin di `http://localhost/phpmyadmin`.
-  2. Buat database baru bernama `rpl` dengan collation `utf8mb4_unicode_ci`.
+  2. Buat database baru bernama `aether` dengan collation `utf8mb4_unicode_ci`.
 - **Cara Terminal Laragon:**
   Klik tombol **Terminal** di Laragon dan ketik:
   ```bash
-  mysql -u root -e "CREATE DATABASE IF NOT EXISTS rpl CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+  mysql -u root -e "CREATE DATABASE IF NOT EXISTS Aether CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
   ```
 
 ### 5. Pastikan Project Berada di Folder Laragon
 Pastikan folder project terletak di direktori www Laragon:
 ```text
-C:\laragon\www\rpl
+C:\laragon\www\Aether
 ```
-*(Atau `D:\laragon\www\rpl` jika Laragon diinstall di drive D).*
+*(Atau `D:\laragon\www\Aether` jika Laragon diinstall di drive D).*
 
 ### 6. Jalankan Composer Install
-Buka terminal di root project (`C:\laragon\www\rpl`) dan pasang dependensi backend PHP:
+Buka terminal di root project (`C:\laragon\www\Aether`) dan pasang dependensi backend PHP:
 ```bash
 composer install
 ```
@@ -132,12 +132,12 @@ Buka file `.env` dan pastikan konfigurasi berikut telah terisi:
 APP_NAME="Aethereal Joki"
 APP_ENV=local
 APP_DEBUG=true
-APP_URL=http://rpl.test
+APP_URL=http://Aether.test
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=rpl
+DB_DATABASE=Aether
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -176,27 +176,27 @@ Klik kanan pada jendela Laragon > **Apache** > **Reload** atau klik **Stop All**
 
 ### 15. Buka Aplikasi di Browser
 Buka browser favorit Anda (Google Chrome, Microsoft Edge, Mozilla Firefox) dan kunjungi URL resmi lokal:
-👉 **[http://rpl.test](http://rpl.test)**
+👉 **[http://Aether.test](http://Aether.test)**
 
 ---
 
 ## ⚙️ Panduan Auto Virtual Hosts & Document Root Laragon
 
-Jika domain `http://rpl.test` tidak otomatis terdeteksi oleh Laragon:
+Jika domain `http://Aether.test` tidak otomatis terdeteksi oleh Laragon:
 
 1. **Aktifkan Fitur Auto Virtual Hosts:**
    - Klik kanan di jendela Laragon > **Preferences** (atau ikon gerigi).
    - Pada tab **General**, beri tanda centang pada opsi **Auto Virtual Hosts**.
-   - Format Hostname default Laragon adalah `{name}.test`. Karena nama foldernya adalah `rpl`, Laragon otomatis menetapkan domain `rpl.test`.
+   - Format Hostname default Laragon adalah `{name}.test`. Karena nama foldernya adalah `Aether`, Laragon otomatis menetapkan domain `Aether.test`.
 
 2. **Memastikan Document Root Mengarah ke `/public`:**
    - Laragon secara otomatis mendeteksi struktur project Laravel dan mengarahkan document root ke subfolder `public`.
    - File konfigurasi Apache Virtual Host otomatis tersimpan di:
-     `C:\laragon\etc\apache2\sites-enabled\auto.rpl.test.conf`
+     `C:\laragon\etc\apache2\sites-enabled\auto.Aether.test.conf`
    - Pastikan isi file tersebut mendefinisikan direktori root ke folder `/public`:
      ```apache
-     define ROOT "C:/laragon/www/rpl/public"
-     define SITE "rpl.test"
+     define ROOT "C:/laragon/www/Aether/public"
+     define SITE "Aether.test"
 
      <VirtualHost *:80> 
          DocumentRoot "${ROOT}"
@@ -217,22 +217,22 @@ Semua akun demo development memiliki password default: **`password`**
 
 | Role | Email | Password | Akses & URL Dashboard |
 | :--- | :--- | :--- | :--- |
-| **Administrator** | `admin@example.com` | `password` | **[http://rpl.test/admin](http://rpl.test/admin)** — CRUD Users, Games, Products, Joki Services, Assign Booster, Reports, Audit Logs |
-| **Pro Booster / Joki** | `joki@example.com` | `password` | **[http://rpl.test/joki/dashboard](http://rpl.test/joki/dashboard)** — Order Assignment, Progress Updates (PROCESSING ➔ COMPLETED), Earnings |
-| **Customer** | `customer@example.com` | `password` | **[http://rpl.test/dashboard](http://rpl.test/dashboard)** — Order History, Detail Tracking, Profile, Reviews, Notifications |
+| **Administrator** | `admin@example.com` | `password` | **[http://aether.test/admin](http://aetherF.test/admin)** — CRUD Users, Games, Products, Joki Services, Assign Booster, Reports, Audit Logs |
+| **Pro Booster / Joki** | `joki@example.com` | `password` | **[http://Aether.test/joki/dashboard](http://Aether.test/joki/dashboard)** — Order Assignment, Progress Updates (PROCESSING ➔ COMPLETED), Earnings |
+| **Customer** | `customer@example.com` | `password` | **[http://Aether.test/dashboard](http://Aether.test/dashboard)** — Order History, Detail Tracking, Profile, Reviews, Notifications |
 
 ---
 
 ## 🛠️ Panduan Pemecahan Masalah (Troubleshooting)
 
-### 1. `rpl.test` Tidak Bisa Dibuka / "This site can't be reached"
+### 1. `Aether.test` Tidak Bisa Dibuka / "This site can't be reached"
 - **Penyebab:** Apache belum berjalan, atau entri Windows hosts belum ditambahkan.
 - **Solusi:**
   1. Pastikan tombol **Start All** di Laragon aktif.
   2. Buka file `C:\Windows\System32\drivers\etc\hosts` (menggunakan Notepad Run as Administrator).
   3. Pastikan terdapat baris:
      ```text
-     127.0.0.1 rpl.test
+     127.0.0.1 Aether.test
      ```
   4. Simpan file lalu reload Apache dari Laragon: klik kanan Laragon > **Apache** > **Reload**.
 
@@ -245,7 +245,7 @@ Semua akun demo development memiliki password default: **`password`**
      DB_CONNECTION=mysql
      DB_HOST=127.0.0.1
      DB_PORT=3306
-     DB_DATABASE=rpl
+     DB_DATABASE=Aether
      DB_USERNAME=root
      DB_PASSWORD=
      ```
@@ -284,6 +284,38 @@ Semua akun demo development memiliki password default: **`password`**
   php artisan key:generate
   php artisan config:clear
   ```
+
+---
+
+## 💻 Panduan Menjalankan & Membangun Aplikasi Desktop (.exe Installer)
+
+Aplikasi **Aethereal Joki** telah terintegrasi dengan **NativePHP (Electron)**, memungkinkan aplikasi Laravel ini dikemas menjadi software desktop mandiri untuk Windows tanpa memerlukan instalasi manual web server di komputer pengguna.
+
+### 1. Menjalankan Mode Desktop Development
+Untuk mencoba aplikasi berjalan di dalam jendela native desktop saat masa pengembangan:
+- **Cara Cepat (Windows):** Cukup klik dua kali berkas [`run-desktop-dev.bat`](file:///d:/laragon/www/aether/run-desktop-dev.bat)
+- **Cara Terminal:**
+  ```bash
+  php artisan native:run
+  # atau
+  npm run desktop:dev
+  ```
+
+### 2. Membangun Berkas Setup Installer Windows (.exe)
+Untuk mengompilasi dan mengemas aplikasi menjadi berkas installer instalasi mandiri Windows (`.exe`):
+- **Cara Cepat (Windows):** Cukup klik dua kali berkas [`build-desktop-exe.bat`](file:///d:/laragon/www/aether/build-desktop-exe.bat)
+- **Cara Terminal:**
+  ```bash
+  npm run build
+  php artisan native:build win x64
+  # atau
+  npm run desktop:build
+  ```
+
+> [!NOTE]
+> Berkas installer installer `.exe` hasil kompilasi akan otomatis disimpan pada folder:
+> `nativephp/electron/dist/aethereal-joki-1.0.0-setup.exe`
+> Pengguna akhir cukup menjalankan installer tersebut untuk memasang aplikasi ke desktop Windows dengan shortcut menu mulai otomatis.
 
 ---
 

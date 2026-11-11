@@ -239,4 +239,4 @@ Sesuai dengan **Bab III Panduan Dosen**:
 *Disusun dan disahkan di Cirebon, 6 November 2026.*  
 **Mahasiswa Pengembang (Full-Stack Software Engineer):**  
 **Farrel Surya Pratama**  
-*(NIM: S1 Teknik Informatika - STMIK IKMI Cirebon)*
+*(NIM: 41257105 S1 Teknik Informatika - STMIK IKMI Cirebon)*

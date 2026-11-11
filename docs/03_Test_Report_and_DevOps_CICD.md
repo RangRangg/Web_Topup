@@ -208,4 +208,4 @@ Berdasarkan hasil eksekusi 117 skrip pengujian otomatis dan konfigurasi pipeline
 *Disahkan di Cirebon, 6 November 2026.*  
 **Mahasiswa Pengembang (Full-Stack Software Engineer):**  
 **Farrel Surya Pratama**  
-*(NIM: S1 Teknik Informatika - STMIK IKMI Cirebon)*
+*(NIM: 41257105 S1 Teknik Informatika - STMIK IKMI Cirebon)*
